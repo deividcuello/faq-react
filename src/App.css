@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+html{
+  font-size: 92.5%;
+}
+
 body{
   min-height: 100vh;
   display: flex;
@@ -27,7 +31,7 @@ body{
 
 .faq{
   overflow: hidden;
-  padding: 0.5rem;
+  padding: 0 0.5rem;
   border-bottom: 1px solid rgb(128, 128, 128);
 }
 
@@ -38,17 +42,17 @@ body{
   cursor: pointer;
 }
 
+.faq .header h1{
+  padding: 1rem;
+}
+
 .faq:last-child{
   border-bottom: none;
 }
 
-.faq .header h1{
-  padding-bottom: 1rem;
-}
-
 .faq p{
   background-color: rgb(195, 255, 161);
-  padding: 0.5rem;
+  padding: 0rem 1rem 1rem 1rem;
 }
 
 svg{
@@ -59,5 +63,9 @@ svg{
 @media only screen and (max-width: 767px){
   html{
     font-size: 62.5%;
+  }
+
+  .faqlist{
+    width: 90vw;
   }
 }
